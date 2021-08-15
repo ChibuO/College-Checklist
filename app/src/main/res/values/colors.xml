@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#662092</color>
+    <color name="colorPrimaryDark">#581381</color>
+    <color name="colorAccent">#081377</color>
+    <color name="checkedColor">#1AAFFF</color>
+    <color name="pressed">#1F095A</color>
+    <color name="focused">#4E4A4A</color>
+    <color name="A1">#10174B</color>
+    <color name="A2">#2E3D86</color>
+    <color name="B1">#242C4B</color>
+    <color name="B2">#7964C7</color>
+    <color name="C1">#7380E7</color>
+    <color name="C2">#3E1F5E</color>
+    <color name="D1">#512683</color>
+    <color name="D2">#330E42</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

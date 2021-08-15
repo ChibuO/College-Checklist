@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#579704D5"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttonConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bedButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/a1button_state"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/bedbtntext"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/toiletButton"
+                app:layout_constraintEnd_toStartOf="@+id/personalButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Beddings" />
+
+            <Button
+                android:id="@+id/personalButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/a2button_state"
+                android:text="@string/persbtntext"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/suppliesButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/bedButton"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Personal" />
+
+            <Button
+                android:id="@+id/toiletButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/b1button_state"
+                android:text="@string/tltrsbtntext"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/medButton"
+                app:layout_constraintEnd_toStartOf="@+id/suppliesButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedButton"
+                tools:text="Toiletries" />
+
+            <Button
+                android:id="@+id/suppliesButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/b2button_state"
+                android:text="@string/splsbtntext"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/devicesButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/toiletButton"
+                app:layout_constraintTop_toBottomOf="@+id/personalButton"
+                tools:text="Supplies" />
+
+            <Button
+                android:id="@+id/medButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/c1button_state"
+                android:text="@string/medbtntext"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/clothesButton"
+                app:layout_constraintEnd_toStartOf="@+id/devicesButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toiletButton" />
+
+            <Button
+                android:id="@+id/devicesButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/c2button_state"
+                android:text="@string/devsbtntext"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/otherButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/medButton"
+                app:layout_constraintTop_toBottomOf="@+id/suppliesButton"
+                tools:text="Electronics" />
+
+            <Button
+                android:id="@+id/clothesButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/d1button_state"
+                android:text="@string/clthsBtnText"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/otherButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medButton"
+                tools:text="Apparel" />
+
+            <Button
+                android:id="@+id/otherButton"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:background="@drawable/d2button_state"
+                android:text="@string/otherbtntext"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/clothesButton"
+                app:layout_constraintTop_toBottomOf="@+id/devicesButton"
+                tools:text="Other" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
